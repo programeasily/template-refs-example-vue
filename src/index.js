@@ -6,13 +6,12 @@ app.component("input-comp", {
     <input ref="input" />
   `,
   methods: {
-    focusInput() {
-      this.$refs.input.focus();
+    updateInput() {
       this.$refs.input.value = "Hello";
     }
   },
   mounted() {
-    this.focusInput();
+    this.updateInput();
   }
 });
 
